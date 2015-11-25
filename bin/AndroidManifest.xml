@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.miniprojectver2"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.miniprojectver2.AddActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.miniprojectver2.DeleteActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.miniprojectver2.Update1Activity"
+            android:label="@string/app_name" >
+        </activity>
+       <activity
+            android:name="com.example.miniprojectver2.Update2Activity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.miniprojectver2.View1Activity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.miniprojectver2.View2Activity"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <provider
+            android:name=".StudentDetailsProvider"
+            android:authorities="com.example.miniprojectver2.StudentDetailsProvider"
+            android:readPermission="true"
+            android:writePermission="true" >
+        </provider>
+    </application>
+
+</manifest>
